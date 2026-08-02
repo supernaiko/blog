@@ -1,0 +1,7 @@
+export default function Navigation(){
+   return <div>
+           <a href="/">首页</a>
+    <a href="/about/">关于</a>
+    <a href="/blog/">博客</a>
+    </div>
+}

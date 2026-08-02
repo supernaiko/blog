@@ -1,0 +1,48 @@
+---
+import './styles/global.css';
+import Navigation from './components/Navigation'; 
+const pageTitle = "关于我"
+const identity = {
+  firstName: "莎拉",
+  country: "加拿大",
+  occupation: "技术撰稿人",
+  hobbies: ["摄影", "观鸟", "棒球"],
+};
+const skillColor = "crimson";
+const skillWeight = "bold";
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+---
+<html lang="zh-CN">
+  <head>
+    <meta charset ="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro</title>
+    <title>{pageTitle}</title>
+    <style define:vars={{skillColor,skillWeight}}>
+        h1{
+            color: purple;
+            font-size: 4rem;
+        }
+         .skill {
+   color: var(--skillColor);
+   font-weight: var(--skillWeight);
+ }
+    </style>
+  </head>
+  <body>
+  <Navigation />
+    
+    <h1>{pageTitle}</h1>
+    <h2>……和我的新 Astro 网站！</h2>
+
+    <p>我正在学习 Astro 的入门教程。这是我网站上的第二个页面，也是我自己建立的第一页面！</p>
+
+    <p>随着我完成更多教程，该站点将更新，所以请继续查看我的旅程将如何进行吧！</p>
+
+    <p>个人介绍</p>
+    <li>我的名字是{identity.firstName}</li>
+    <li>我住在{identity.country}</li>
+    <p>我的技能是</p>
+    <ul>{skills.map((skill) => <li class="skill">{skill}</li>)}</ul>
+  </body>
+</html>
