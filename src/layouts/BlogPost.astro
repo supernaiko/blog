@@ -12,7 +12,7 @@ const {frontmatter} = Astro.props
     <Navigation />
     <h1>{frontmatter.title}</h1>
     <p>作者:{frontmatter.author}</p>
-    <p>发布日期:{new Date(frontmatter.pubDate).toLocaleDateString('zh-CN')}</p>
+    <p>发布日期:{frontmatter.pubDate}</p>
     <hr />
     <article>
       <slot />
