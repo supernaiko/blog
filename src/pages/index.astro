@@ -2,6 +2,12 @@
 console.log("欢迎使用");
 import './styles/global.css';
 import Navigation from '../components/Navigation.astro';
+const postTitle = ["欢迎使用Astro","2","Astro是一个现代的静态站点生成器"];
+postTitle.push("这是一个新的标题");
+console.log(postTitle);
+postTitle.pop();
+console.log(postTitle);
+
 ---
 
 <html lang="en">
