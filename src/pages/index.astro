@@ -7,6 +7,29 @@ postTitle.push("这是一个新的标题");
 console.log(postTitle);
 postTitle.pop();
 console.log(postTitle);
+console.log(postTitle.includes("欢迎使用Astro"));
+console.log(postTitle.includes("1"));
+let c = []
+for(let i = 0; i< postTitle.length; i++) {
+	c.push({"文章": postTitle[i]})}
+console.log(c);
+
+const makePostMessage = (title:string, index:number) => {
+	return `文章标题: ${title} (索引: ${index})`;
+};
+console.log(makePostMessage("JavaScript 数组方法", 0));
+console.log('-----------------------------------------------------');
+const post = postTitle.map((title:string, index:number) => {
+	return `文章标题: ${title} (索引: ${index})`;
+});
+console.log(post);
+const postMessages = postTitle.forEach((title:string)=>{
+	 console.log(`文章1111${title}`);
+})
+console.log(postMessages);
+const postStats ={a:1,b:2,c:3};
+let postStatEntries  = Object.entries(postStats);
+console.log(postStatEntries);
 
 ---
 
