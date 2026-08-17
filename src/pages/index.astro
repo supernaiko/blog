@@ -53,10 +53,28 @@ console.log(tags);
 	<body>
 		<Navigation />
 		<h1>站点</h1>
+		<input type="text" id="title-input" placeholder="输入新标题">
+		<button id="input-button"></button>
 		<script>
+			const titleInput = document.querySelector('#title-input') as HTMLInputElement
+			const  inputButton = document.getElementById("input-button")
+			inputButton?.addEventListener('click',dl)
+			
+			
 			const pageTitle = document.querySelector('h1');
 			console.log(pageTitle);
-			
+			pageTitle?.addEventListener('click',()=>{
+				alert('你点击了标题');
+				pageTitle.textContent = '你点击了标题';
+				pageTitle.innerText
+			})
+			function dl(){
+				const t = titleInput?.value;
+				if(pageTitle){
+					pageTitle.textContent = t
+				}
+				
+			}
 		</script>
 	</body>
 </html>

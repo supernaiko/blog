@@ -26,11 +26,16 @@
 - 字符串方法：理解 `trim()` 会返回去除字符串首尾空白后的新字符串，且不修改原字符串。
 - 字符串方法：理解 `split()` 会按分隔符把字符串转换为数组；能结合 `map()` 和 `trim()` 清理博客标签中的空格。
 - DOM：能在页面的 `<script>` 中使用 `document.querySelector()` 选择首个匹配的元素，并在浏览器控制台检查结果。
+- DOM 事件：能使用 `addEventListener('click', ...)` 在点击元素后执行指定代码。
+- DOM 内容：了解 `textContent`、`innerText` 与 `innerHTML` 的读取和写入差异；知道普通文字优先使用 `textContent`，避免把不可信内容写入 `innerHTML`。
+- DOM 表单：能通过输入框的 `.value` 读取用户当前输入的内容，并在点击按钮后输出到浏览器控制台。
+- TypeScript：能用 `as HTMLInputElement` 为已确认的输入框补充具体元素类型，理解它只影响类型检查而不转换运行时值。
+- 事件回调：理解 `addEventListener('click', dl)` 传入函数以便点击时执行；`dl()` 则会立刻调用函数。
+- DOM 交互：能在按钮点击后读取输入框内容，并用 `textContent` 更新首页标题；能通过 `if (pageTitle)` 处理元素可能不存在的情况。
 
 ## 尚未系统学习
 
 - 字符串方法：`toLowerCase`。
-- 页面交互：点击事件、读取输入框内容。
 - 模块：`import / export`。
 - 异步：`Promise`、`async / await`、`fetch`。
 
