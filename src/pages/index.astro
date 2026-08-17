@@ -30,6 +30,14 @@ console.log(postMessages);
 const postStats ={a:1,b:2,c:3};
 let postStatEntries  = Object.entries(postStats);
 console.log(postStatEntries);
+const rawTag =  " javascript,  html, css, astro, react, vue, svelte  ";
+const cleanTag = rawTag.trim();
+console.log(`[${rawTag}]`);
+console.log(`[${cleanTag}]`);
+console.log('26-8-17================================================================');
+const tags = cleanTag.split(',').map(tag => tag.trim());
+console.log(tags);
+
 
 ---
 
