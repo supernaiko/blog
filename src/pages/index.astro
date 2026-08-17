@@ -39,6 +39,7 @@ const tags = cleanTag.split(',').map(tag => tag.trim());
 console.log(tags);
 
 
+
 ---
 
 <html lang="en">
@@ -52,6 +53,10 @@ console.log(tags);
 	<body>
 		<Navigation />
 		<h1>站点</h1>
-		
+		<script>
+			const pageTitle = document.querySelector('h1');
+			console.log(pageTitle);
+			
+		</script>
 	</body>
 </html>
