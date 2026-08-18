@@ -25,6 +25,9 @@
 - 对象方法：理解 `Object.entries()` 只把当前层对象转换为“键名、值”配对的二维数组。
 - 字符串方法：理解 `trim()` 会返回去除字符串首尾空白后的新字符串，且不修改原字符串。
 - 字符串方法：理解 `split()` 会按分隔符把字符串转换为数组；能结合 `map()` 和 `trim()` 清理博客标签中的空格。
+- 字符串方法：理解 `toLowerCase()` 会返回全部转为小写的新字符串，可统一标签或用户输入的大小写，且不修改原字符串。
+- 模块：能用 `export const` 从 `.ts` 文件命名导出数据，并用 `import { 名称 } from '路径'` 在 Astro 组件中导入使用；了解 `.astro` 组件可被默认导入。
+- Astro 模板：理解 `{变量}` 可在标签文字或属性中读取并显示 JavaScript 值；知道这不是普通 `.ts` 文件语法。
 - DOM：能在页面的 `<script>` 中使用 `document.querySelector()` 选择首个匹配的元素，并在浏览器控制台检查结果。
 - DOM 事件：能使用 `addEventListener('click', ...)` 在点击元素后执行指定代码。
 - DOM 内容：了解 `textContent`、`innerText` 与 `innerHTML` 的读取和写入差异；知道普通文字优先使用 `textContent`，避免把不可信内容写入 `innerHTML`。
@@ -37,8 +40,6 @@
 
 ## 尚未系统学习
 
-- 字符串方法：`toLowerCase`。
-- 模块：`import / export`。
 - 异步：`Promise`、`async / await`、`fetch`。
 
 ## 当前学习策略
