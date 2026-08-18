@@ -54,7 +54,7 @@ console.log(tags);
 		<Navigation />
 		<h1>站点</h1>
 		<input type="text" id="title-input" placeholder="输入新标题">
-		<button id="input-button"></button>
+		<button id="input-button">按钮</button>
 		<script>
 			const titleInput = document.querySelector('#title-input') as HTMLInputElement
 			const  inputButton = document.getElementById("input-button")
@@ -69,11 +69,16 @@ console.log(tags);
 				pageTitle.innerText
 			})
 			function dl(){
-				const t = titleInput?.value;
+				const t = titleInput?.value.trim();
+				if(t.length > 0){
+
+				
 				if(pageTitle){
 					pageTitle.textContent = t
-				}
+				}else{
+					alert('没有找到标题元素')}
 				
+			}
 			}
 		</script>
 	</body>
